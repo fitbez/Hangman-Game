@@ -1,0 +1,77 @@
+.header {
+  border: 20px solid blue;
+  font-size: 60px;
+  text-align: center;
+  margin: 0 auto;
+  height: 100px;
+  width: 80%;
+  padding-top: 50px;
+  font-family: 'Permanent Marker', cursive;
+  padding-bottom: 60px;
+}
+
+.howtoplay {
+  color: tomato;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50%;
+  padding-top: 50px;
+  font-family: sans-serif;
+}
+.underScore {
+  border: 15px solid blue;
+  font-size: 80px;
+  text-align: center;
+  margin: 0 auto;
+  height: 80px;
+  width: 60%;
+  padding-top: 50px;
+  padding-bottom:40px;
+  font-family: sans-serif;
+}
+.rightGuess {
+  border: 10px solid blue;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  height: 60px;
+  width: 40%;
+  padding-top: 50px;
+  font-family: sans-serif;
+  color: green;
+}
+.wrongGuess {
+  border: 5px solid blue;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  height: 40px;
+  width: 20%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  color: red;
+}
+.wins{
+  text-align: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  float: center;
+  padding-top: 15px;
+  font-family: sans-serif;
+  color: black;
+}
+.result{
+  border: 3px solid green;
+  font-size: 40px;
+  text-align: center;
+  height: 30px;
+  width: 10%;
+  padding-top: 10px;
+  float: center;
+  margin-left: 45%;
+  font-family: sans-serif;
+}
