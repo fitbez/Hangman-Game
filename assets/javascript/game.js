@@ -10,7 +10,7 @@
  var underScore = [];
 
 
- // Dom manipulation
+ // Gets Elements by Class Name
 
  var docUnderScore = document.getElementsByClassName("underScore");
  var docRightGuess= document.getElementsByClassName("rightGuess");
@@ -35,32 +35,23 @@
  document.addEventListener("keypress", (event) =>{
    var keyword = String.fromCharCode(event.keyCode);
 
-   // if Users guess is right
+ // if Users guess is right
 
    if(choosenWord.indexOf(keyword) > -1) {
 
-     // add to the right word array
-     rightWord.push(keyword.toUpperCase());
-     var options = {
-  body: 'Do you like my body?',
-  sound: 'audio/alert.mp3'
+ // add to the right word array
+    rightWord.push(keyword.toUpperCase());
+
+// add sound on the rightWord
+  if(keyword == rightWord){
+  notification.sound =  'audio/alert.mp3';
 }
-
-var n = new Notification('Test notification',options);
-
-n.sound // should return 'audio/alert.mp3'
-
-
-
-     // replace underscore with right letter
+ // replace underscore with right letter
      underScore[choosenWord.indexOf(keyword)] = keyword;
       docUnderScore[0].innerHTML = underScore.join("");
      docRightGuess[0].innerHTML = rightWord;
 
-
-
-
-     // Checks to see if user word matches guesses
+ // Checks to see if user word matches guesses
      if (underScore.join("") == choosenWord) {
        alert("You Win");
      }
@@ -74,6 +65,3 @@ n.sound // should return 'audio/alert.mp3'
  });
 
 docUnderScore[0].innerHTML = generateUnderscore().join(" ");
- // docUnderScore.innerHTML= underScore;
- // docRightGeuss.innerHTML = rightGuess;
- // docWrongGeuss.innerHTML =wrongGuess;
